@@ -7,6 +7,7 @@ public class ButtonScript : MonoBehaviour
     public void NewGameButton()
     {
         SceneManager.LoadScene(newGameLevel);
+        FindAnyObjectByType<AudioManager>().Play("Jumpscare");
     }
     public void LoadScene(string name)
     {

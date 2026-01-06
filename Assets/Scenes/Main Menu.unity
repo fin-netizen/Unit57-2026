@@ -3356,8 +3356,8 @@ MonoBehaviour:
     Mixer: {fileID: 8545713199363483860, guid: 348c72bb221e52c40a0d9dcaedfbf879, type: 2}
   - name: Jumpscare
     clip: {fileID: 8300000, guid: 27b75028839a22c4499f869a12b1e8fa, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1.535
     loop: 0
     source: {fileID: 0}
     Mixer: {fileID: -2742164952319288897, guid: 348c72bb221e52c40a0d9dcaedfbf879, type: 2}

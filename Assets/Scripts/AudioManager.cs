@@ -44,6 +44,7 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning("Sound: " + name + ".exe not found");
             return;
         }
+        s.source.Play();
    }
 
     public void ChangeAudioSourceVolume(string name, float vol)
