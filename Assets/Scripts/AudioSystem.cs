@@ -3,7 +3,7 @@ using UnityEngine.Audio;
 
 
 [System.Serializable]
-public class AudioSystem : MonoBehaviour
+public class AudioSystem
 {
     public string name;
 

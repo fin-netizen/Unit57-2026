@@ -3346,7 +3346,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2edc4e70df5762c40a885f2587cb5319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  sounds: []
+  sounds:
+  - name: Music
+    clip: {fileID: 8300000, guid: 34dd3407dcea77547aa00cddb817066e, type: 3}
+    volume: 0.164
+    pitch: 0.488
+    loop: 1
+    source: {fileID: 0}
+    Mixer: {fileID: 8545713199363483860, guid: 348c72bb221e52c40a0d9dcaedfbf879, type: 2}
+  - name: Jumpscare
+    clip: {fileID: 8300000, guid: 27b75028839a22c4499f869a12b1e8fa, type: 3}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+    Mixer: {fileID: -2742164952319288897, guid: 348c72bb221e52c40a0d9dcaedfbf879, type: 2}
   musicVol: 0
   sfxVol: 0
 --- !u!1 &1198469643
