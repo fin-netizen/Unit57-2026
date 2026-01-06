@@ -36,16 +36,15 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void Play(string name)
-    {
+   public void Play(string name)
+   {
         AudioSystem s = Array.Find(sounds, AudioSystem => AudioSystem.name == name);
-        if (s == null)
+        if(s == null)
         {
-            Debug.LogWarning("Sound: " + name + ".exe Not found!");
+            Debug.LogWarning("Sound: " + name + ".exe not found");
             return;
         }
-        s.source.Play();
-    }
+   }
 
     public void ChangeAudioSourceVolume(string name, float vol)
     {

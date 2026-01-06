@@ -22,9 +22,6 @@ public class LevelManager : MonoBehaviour
 
             print("do not destroy");
 
-
-
-
         }
         else
         {
