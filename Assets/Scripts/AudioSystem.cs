@@ -16,5 +16,5 @@ public class AudioSystem : MonoBehaviour
     public bool loop;
     [HideInInspector]
     public AudioSource source;
-
+    public AudioMixerGroup Mixer;
 }

@@ -24,7 +24,15 @@ public class AudioManager : MonoBehaviour
             // as we already have one
             Destroy(gameObject);
         }
-
+        foreach (AudioSystem s in sounds)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
+            s.source.loop = s.loop;
+            s.source.outputAudioMixerGroup = s.Mixer;
+        }
     }
 
     public void Play(string name)

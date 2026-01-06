@@ -3331,7 +3331,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2edc4e70df5762c40a885f2587cb5319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  sounds: []
+  sounds:
+  - {fileID: 0}
   musicVol: 0
   sfxVol: 0
 --- !u!4 &1185598625
