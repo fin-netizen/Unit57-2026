@@ -7,7 +7,7 @@ public class ButtonScript : MonoBehaviour
     public void NewGameButton()
     {
         SceneManager.LoadSceneAsync(newGameLevel);
-        FindAnyObjectByType<AudioManager>().Play("Jumpscare");
+        
     }
     public void LoadScene(string name)
     {
@@ -17,6 +17,12 @@ public class ButtonScript : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void PlaySfx(string sfxName)
+    {
+        //AudioManager.instance.bjectByType<AudioManager>().Play("Jumpscare");
+        AudioManager.instance.Play(sfxName);
     }
 
 }
