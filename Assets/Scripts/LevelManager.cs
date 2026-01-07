@@ -40,18 +40,10 @@ public class LevelManager : MonoBehaviour
         {
             AudioManager.instance.musicVol = PlayerPrefs.GetFloat("musicVol");
         }
-        else
-        {
-            PlayerPrefs.SetFloat("musicVol", 0.75f);
-        }
 
         if (PlayerPrefs.HasKey("sfxVol") == true)
         {
             AudioManager.instance.sfxVol = PlayerPrefs.GetFloat("sfxVol");
-        }
-        else
-        {
-            PlayerPrefs.SetFloat("sfxVol", 0.25f);
         }
 
     }

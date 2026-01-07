@@ -6,7 +6,7 @@ public class ButtonScript : MonoBehaviour
     [SerializeField] private string newGameLevel = "Level";
     public void NewGameButton()
     {
-        SceneManager.LoadScene(newGameLevel);
+        SceneManager.LoadSceneAsync(newGameLevel);
         FindAnyObjectByType<AudioManager>().Play("Jumpscare");
     }
     public void LoadScene(string name)
