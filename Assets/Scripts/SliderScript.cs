@@ -14,7 +14,7 @@ public class SliderScript : MonoBehaviour
         AudioManager.instance.pain = value;
         float localValue = value * maxSliderAmount;
         sliderText.text = localValue.ToString("0");
-        PlayerPrefs.SetFloat("MusicVol", AudioManager.instance.pain);
+        PlayerPrefs.SetFloat("MusicVolume", AudioManager.instance.pain);
         mixer.SetFloat("MusicVol", Mathf.Log10(AudioManager.instance.pain) * 20);
     }
     public void PlayMusic(string musicName)

@@ -67,13 +67,13 @@ public class AudioManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (PlayerPrefs.HasKey("musicVol") == true)
+        if (PlayerPrefs.HasKey("MusicVolume") == true)
         {
-            musicSliderVol = PlayerPrefs.GetFloat("musicVol");
+            musicSliderVol = PlayerPrefs.GetFloat("MusicVolume");
         }
         else
         {
-            PlayerPrefs.SetFloat("musicVol", 1f);
+            PlayerPrefs.SetFloat("MusicVolume", 1f);
         }
     }
 

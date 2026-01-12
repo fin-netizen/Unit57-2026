@@ -4,7 +4,7 @@ public class MainMenu : MonoBehaviour
 {
     private void Start()
     {
-        AudioManager.instance.pain =  PlayerPrefs.GetFloat("MusicVol");
+        AudioManager.instance.pain =  PlayerPrefs.GetFloat("MusicVolume");
     }
     public void PlayGame()
     {
