@@ -26,6 +26,8 @@ public class AudioManager : MonoBehaviour
             // Another instance of this gameobject has been made so destroy it
             // as we already have one
             Destroy(gameObject);
+            return;
+
         }
         foreach (AudioSystem s in sounds)
         {
@@ -34,7 +36,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
-            s.source.outputAudioMixerGroup = s.Mixer;
+            s.source.outputAudioMixerGroup = s.mixer;
         }
     }
 
