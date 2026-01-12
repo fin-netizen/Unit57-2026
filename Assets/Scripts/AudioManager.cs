@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     public float sfxVol;
     public float musicSliderVol = 0;
     public AudioMixer mixer;
+    public float pain;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -70,16 +71,21 @@ public class AudioManager : MonoBehaviour
         {
             musicSliderVol = PlayerPrefs.GetFloat("musicVol");
         }
+        else
+        {
+            PlayerPrefs.SetFloat("musicVol", 1f);
+        }
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        float musicVol, sfxVol;
+        
 
-        musicVol = 0.5f;
-        sfxVol = 0.5f;
-        mixer.SetFloat("MusicVol", Mathf.Log10(musicVol) * 20 );
+        
+        
+       
         mixer.SetFloat("sfxVol", Mathf.Log10(sfxVol) * 20);
     }
+
 }

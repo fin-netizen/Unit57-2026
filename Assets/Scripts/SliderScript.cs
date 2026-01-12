@@ -1,14 +1,24 @@
-using UnityEngine;
+using System.Xml.Linq;
 using TMPro;
+using UnityEngine;
+using UnityEngine.Audio;
 public class SliderScript : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI sliderText = null;
-
+    public AudioMixer mixer;
     [SerializeField] private float maxSliderAmount = 100.0f;
-
+    float musicVol, sfxVol;
+  
     public void SliderChange(float value)
     {
+        AudioManager.instance.pain = value;
         float localValue = value * maxSliderAmount;
         sliderText.text = localValue.ToString("0");
+        PlayerPrefs.SetFloat("MusicVol", AudioManager.instance.pain);
+        mixer.SetFloat("MusicVol", Mathf.Log10(AudioManager.instance.pain) * 20);
+    }
+    public void PlayMusic(string musicName)
+    {
+        AudioManager.instance.Play(musicName);
     }
 }

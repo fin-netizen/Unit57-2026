@@ -2,7 +2,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-
+    private void Start()
+    {
+        AudioManager.instance.pain =  PlayerPrefs.GetFloat("MusicVol");
+    }
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync(1);

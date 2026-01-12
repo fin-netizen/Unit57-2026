@@ -24,5 +24,6 @@ public class ButtonScript : MonoBehaviour
         //AudioManager.instance.bjectByType<AudioManager>().Play("Jumpscare");
         AudioManager.instance.Play(sfxName);
     }
+    
 
 }
