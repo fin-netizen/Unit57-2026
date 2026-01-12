@@ -2824,14 +2824,14 @@ MonoBehaviour:
     pitch: 0
     loop: 1
     source: {fileID: 0}
-    Mixer: {fileID: 8545713199363483860, guid: 348c72bb221e52c40a0d9dcaedfbf879, type: 2}
+    mixer: {fileID: 0}
   - name: Jumpscare
     clip: {fileID: 8300000, guid: 27b75028839a22c4499f869a12b1e8fa, type: 3}
     volume: 0.5
     pitch: 0
     loop: 0
     source: {fileID: 0}
-    Mixer: {fileID: -2742164952319288897, guid: 348c72bb221e52c40a0d9dcaedfbf879, type: 2}
+    mixer: {fileID: 0}
   musicVol: 4
   sfxVol: 2
   musicSliderVol: 0
@@ -3234,7 +3234,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
