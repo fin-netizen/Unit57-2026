@@ -2360,6 +2360,7 @@ GameObject:
   - component: {fileID: 813561255}
   - component: {fileID: 813561254}
   - component: {fileID: 813561253}
+  - component: {fileID: 813561256}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -2431,10 +2432,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1094997415}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: QuitGame
-        m_Mode: 1
+      - m_Target: {fileID: 813561256}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: PlaySfx
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2481,6 +2482,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813561251}
   m_CullTransparentMesh: 1
+--- !u!114 &813561256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813561251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a561802e2b97244ab6088969150993d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonScript
+  newGameLevel: Level
 --- !u!1 &863428118
 GameObject:
   m_ObjectHideFlags: 0
@@ -3629,7 +3643,7 @@ MonoBehaviour:
     source: {fileID: 0}
     mixer: {fileID: 8545713199363483860, guid: 348c72bb221e52c40a0d9dcaedfbf879, type: 2}
   - name: Jumpscare
-    clip: {fileID: 8300000, guid: 27b75028839a22c4499f869a12b1e8fa, type: 3}
+    clip: {fileID: 8300000, guid: 3b15917323aeaf7439606cb6f66ef9bf, type: 3}
     volume: 1
     pitch: 1.535
     loop: 0
