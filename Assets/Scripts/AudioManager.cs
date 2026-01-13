@@ -8,11 +8,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
     public float musicVol;
     public float sfxVol;
-    public float musicSliderVol = 0;
-    public float sfxSliderVol = 0;
     public AudioMixer mixer;
-    public float pain;
-    public float Agony;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -71,7 +67,7 @@ public class AudioManager : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("MusicVolume") == true)
         {
-            musicSliderVol = PlayerPrefs.GetFloat("MusicVolume");
+            AudioManager.instance.musicVol = PlayerPrefs.GetFloat("MusicVolume");
         }
         else
         {
@@ -79,7 +75,7 @@ public class AudioManager : MonoBehaviour
         }
         if (PlayerPrefs.HasKey("sfxVolume") == true)
         {
-            sfxSliderVol = PlayerPrefs.GetFloat("sfxVolume");
+            AudioManager.instance.sfxVol = PlayerPrefs.GetFloat("sfxVolume");
         }
         else
         {

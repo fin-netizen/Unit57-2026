@@ -8,15 +8,15 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.instance.musicSliderVol =  PlayerPrefs.GetFloat("MusicVolume");
+        AudioManager.instance.musicVol =  PlayerPrefs.GetFloat("MusicVolume");
         print("musicvol=" + PlayerPrefs.GetFloat("MusicVolume"));
 
         
-        AudioManager.instance.sfxSliderVol = PlayerPrefs.GetFloat("sfxVolume");
+        AudioManager.instance.sfxVol = PlayerPrefs.GetFloat("sfxVolume");
         print("sfxvol=" + PlayerPrefs.GetFloat("sfxVolume"));
 
-        musicSlider.value = AudioManager.instance.sfxSliderVol;
-        sfxSlider.value = AudioManager.instance.sfxSliderVol;
+        musicSlider.value = AudioManager.instance.musicVol;
+        sfxSlider.value = AudioManager.instance.sfxVol;
         //set the audio mixer volumes
 
 

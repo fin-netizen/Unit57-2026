@@ -11,19 +11,19 @@ public class SliderScript : MonoBehaviour
   
     public void MusicSliderChange(float value)
     {
-        AudioManager.instance.pain = value;
+        AudioManager.instance.musicVol = value;
         float localValue = value * maxSliderAmount;
         sliderText.text = localValue.ToString("0");
-        PlayerPrefs.SetFloat("MusicVolume", AudioManager.instance.pain);
-        mixer.SetFloat("MusicVol", Mathf.Log10(AudioManager.instance.pain) * 20);
+        PlayerPrefs.SetFloat("MusicVolume", AudioManager.instance.musicVol);
+        mixer.SetFloat("MusicVol", Mathf.Log10(AudioManager.instance.musicVol) * 20);
     }
-    public void sfxSliderChange(float value)
+    public void SfxSliderChange(float value)
     {
-        AudioManager.instance.Agony = value;
+        AudioManager.instance.sfxVol = value;
         float localValue = value * maxSliderAmount;
         sliderText.text = localValue.ToString("0");
-        PlayerPrefs.SetFloat("sfxVolume", AudioManager.instance.Agony);
-        mixer.SetFloat("sfxVol", Mathf.Log10(AudioManager.instance.Agony) * 20);
+        PlayerPrefs.SetFloat("sfxVolume", AudioManager.instance.sfxVol);
+        mixer.SetFloat("sfxVol", Mathf.Log10(AudioManager.instance.sfxVol) * 20);
     }
     public void PlayMusic(string musicName)
     {
