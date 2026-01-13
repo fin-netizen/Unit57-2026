@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
         AudioManager.instance.musicSliderVol =  PlayerPrefs.GetFloat("MusicVolume");
         print("musicvol=" + PlayerPrefs.GetFloat("MusicVolume"));
 
-        musicSlider.value = AudioManager.instance.musicSliderVol;
+        
         AudioManager.instance.sfxSliderVol = PlayerPrefs.GetFloat("sfxVolume");
         print("sfxvol=" + PlayerPrefs.GetFloat("sfxVolume"));
 

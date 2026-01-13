@@ -29,4 +29,10 @@ public class SliderScript : MonoBehaviour
     {
         AudioManager.instance.Play(musicName);
     }
+    public void PlaySfx(string sfxName)
+    {
+        //AudioManager.instance.bjectByType<AudioManager>().Play("Jumpscare");
+        AudioManager.instance.Play(sfxName);
+        
+    }
 }
